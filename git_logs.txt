@@ -1,0 +1,25 @@
+git init
+
+echo "Version control is important in collaborative projects because it helps team members track changes made to files and code over time. It allows developers to work on the same project without overwriting each other's work. Version control also provides a history of modifications, making it easier to identify and fix errors. Additionally, it improves teamwork by enabling efficient collaboration and project management." > f6_activity.txt
+
+git add f6_activity.txt
+
+git commit -m "Initial commit with explanation"
+
+git branch feature-update
+
+git checkout feature-update
+
+# Edit f6_activity.txt and add:
+# Git offers several advantages compared to manual file management.
+# It keeps a complete history of changes, allowing users to revert to previous versions when needed.
+# Git also supports branching and merging, which makes it easier to develop new features without affecting the main project.
+# Furthermore, it reduces confusion caused by multiple file copies and improves overall workflow efficiency.
+
+git add f6_activity.txt
+
+git commit -m "Added advantages of Git"
+
+git checkout main
+
+git merge feature-update
